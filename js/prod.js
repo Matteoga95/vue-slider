@@ -33,7 +33,7 @@ createApp({
     methods: {
         nextImage(){
             this.activeImage++
-            console.log(this.activeImage);
+           
             if (this.activeImage === this.slides.length-1){
                 this.activeImage=0;
             }
@@ -47,7 +47,7 @@ createApp({
         startAutoPlay(){
             this.intervallo = setInterval(() => {
                 this.nextImage()
-            }, 1000);
+            }, 3000);
         },
         stopAutoPlay(){
             clearInterval(intervallo)
