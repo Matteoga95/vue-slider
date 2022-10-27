@@ -50,7 +50,7 @@ createApp({
             }, 3000);
         },
         stopAutoPlay() {
-            clearInterval(intervallo);
+            clearInterval(this.intervallo);
         },
         changeImage(index) {
             this.activeImage = index;
