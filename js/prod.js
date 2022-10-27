@@ -29,16 +29,18 @@ createApp({
                 ]
         }
     },
-    nextImage(){
-        this.activeImage++
-        if (this.activeImage === this.slides.length){
-            this.activeImage=index;
-        }
-    },
-    prevImage(){
-        this.activeImage--
-        if (this.activeImage <0 ){
-            this.activeImage=this.slides.length-1;
+    methods: {
+        nextImage(){
+            this.activeImage++
+            if (this.activeImage === this.slides.length){
+                this.activeImage=index;
+            }
+        },
+        prevImage(){
+            this.activeImage--
+            if (this.activeImage <0 ){
+                this.activeImage=this.slides.length-1;
+            }
         }
     }
 }).mount('#app');
